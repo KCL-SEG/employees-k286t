@@ -31,7 +31,7 @@ class Employee:
         report += self.name + " works on a " + self.contract_message() 
         if self.commission_message():
             report += " and " + self.commission_message()  
-        report+= ". Their total pay is " + str(self.get_pay())
+        report+= ". Their total pay is " + str(self.get_pay()) + "."
         return report
 
     def contract_message(self):
