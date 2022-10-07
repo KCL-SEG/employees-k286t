@@ -45,7 +45,7 @@ class Employee:
     def commission_message(self):
         message = ""
         if self.commission=="Contract":
-            message+="receives a commission for " + str(self.concomm) + " contract(s) at " + str(self.c_rate) + "/contract."
+            message+="receives a commission for " + str(self.concomm) + " contract(s) at " + str(self.c_rate) + "/contract"
         elif self.commission=="Bonus":
             message+="receives a bonus commission of " + str(self.bonus) 
         return message
@@ -69,3 +69,4 @@ robbie = Employee('Robbie', contract="Salary", m_salary=2000, commission="Bonus"
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', contract="Hourly", hour=120, h_rate=30, commission="Bonus", bonus=600)
 
+print(renee.__str__())
